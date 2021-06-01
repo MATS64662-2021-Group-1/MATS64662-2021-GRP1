@@ -6,7 +6,7 @@ The final repository for Group 1 of MATS64662 2021, to show code for the *connec
 
 # How to install
  - We recommend installing a python conda distribution using the free open-source [Anaconda Individual Edition](https://www.anaconda.com/products/individual).
- - This will allow you to easily manage installed python packages in `*Anaconda Navigator*` then `*Environments*`, and searching for the respective packages.
+ - This will allow you to easily manage installed python packages in `Anaconda Navigator` *then* `Environments`, and searching for the respective packages.
 
 Ensure that you install and update the following packages (some of these may be installed by default):
   - `Matplotlib`
