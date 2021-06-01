@@ -24,7 +24,7 @@ Ensure that you install and update the following packages (some of these may be 
 ## Pyfunctions
  - This folder contains all the python functions as .py files.
  - Each function has a convenient docstring which describe the inputs and outputs concisely.
- - This can be accessed by simply importing the function into your Jupyter environment, or running it in your terminal, and then typing `help("function name")`. This will pring the docstring.
+ - This can be accessed by simply importing the function into your Jupyter environment, or running it in your terminal, and then typing `help("function name")`. This will print the docstring.
 
 ## data
 This contains the data used for the project, in the form of images. Here there is a folder for:
