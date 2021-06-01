@@ -20,7 +20,7 @@ def RHF_prop(hough_measure_array):
         
     Returns
     -------
-    rhf: float
+    rhf2: float
         radial hydride fraction
     max: int/float
         maximum hydride size detected in pixels
