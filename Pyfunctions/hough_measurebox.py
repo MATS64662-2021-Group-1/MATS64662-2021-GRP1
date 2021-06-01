@@ -15,12 +15,18 @@ from matplotlib.patches import Rectangle
 
 def hough_measurebox(bin_array, background, min_line_dist, min_line_angle, fraction, peak_no):
     """
-    hough_meaurebox is a function that performs a hough transform of the given array (or binary image) which has been sliced
-    according to labelled image regions from skimage label and ndimage. This was based on the previous function hough_measure and 
-    code by M. Maric (HAPPy).\nHough lines are plotted for each object detected from the hough peaks onto the input image in rectangles which are generated
-    from the object size. \nBefore using, ensure your array is binary (dtype=int). The image will be labelled into regions
-    according to skimage.measure.label, for this you choose background type. Connectivity is defined as the number of dimensions
-    equal to that in the original image.
+    hough_meaurebox is a function that performs a hough transform of the given 
+    array (or binary image) which has been sliced according to labelled image 
+    regions from skimage label and ndimage. This was based on the previous 
+    function hough_measure and code by M. Maric (HAPPy). 
+    
+    Hough lines are plotted for each object detected from the hough peaks onto 
+    the input image in rectangles which are generated from the object size. 
+    Before using, ensure your array is binary (dtype=int). 
+    
+    The image will be labelled into regions according to skimage.measure.label, 
+    for this you choose background type. Connectivity is defined as the number 
+    of dimensions equal to that in the original image.
     
     Parameters
     ----------
@@ -32,21 +38,25 @@ def hough_measurebox(bin_array, background, min_line_dist, min_line_angle, fract
         background = 1 is recommended and defines white as the image background.
         
     min_line_dist: int 
-        The minimum distance which separates detected hough lines (int). Approximately 5 is reccomended.
+        The minimum distance which separates detected hough lines (int). 
+        Approximately 5 is reccomended.
         
     min_line_angle: int 
-        The minimum angle separating lines (int). Approximately 5 seems acceptable, 
-        but depending on the hydride formation you may want to increase it, 
-        e.g. 20 will eliminate illogical diagonal connectivity paths.
+        The minimum angle separating lines (int). Approximately 5 seems 
+        acceptable, but depending on the hydride formation you may want to 
+        increase it, e.g. 20 will eliminate illogical diagonal connectivity 
+        paths.
         
     fraction: float
-        This filter value specifies the minimum intensity of hough peaks (hydride dimension), 
-        by default this is 0.5*max(hspace) from houghspace_array. A value of 0.3 is recommended. 0.5 may be too large, 
-        and this will elimate lines that are less than 50% of the size of the "largest" line detected.
+        This filter value specifies the minimum intensity of hough peaks 
+        (hydride dimension), by default this is 0.5*max(hspace) from 
+        houghspace_array. A value of 0.3 is recommended. 
+        
             
     peak_no: int 
-        The maximum number of peaks that should be detected by the hough_line_peaks from skimage. Reccommended
-        5, increase if you need to increase the number of detected hydrides.
+        The maximum number of peaks that should be detected by the 
+        hough_line_peaks from skimage. Reccommended 5, increase if you need 
+        to increase the number of detected hydrides.
         
     Returns
     -------
