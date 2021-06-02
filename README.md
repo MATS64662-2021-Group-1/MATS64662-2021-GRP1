@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MATS64662-2021-Group-1/MATS64662-2021-GRP1/main)
+
 # MATS64662-2021-GRP1
 The final repository for Group 1 of MATS64662 2021, to show code for the *connectivity of hydrides software project* in the University of Manchester module MATS64662, for Research Software Engineering. This Python package aims to carry out preliminary characterisation of Zirconium Hydride connectivity from sample micrographs by:
 
