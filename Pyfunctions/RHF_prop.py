@@ -8,9 +8,11 @@ import numpy as np
 
 def RHF_prop(hough_measure_array):
  
-    """This functions calculates the proportion of radial hydrides by assessing each angle by the criteria 
-    created by (Colas, 2013). However, it is modified for use with hough_measure.py, as angles are taken in respect to the 
-    y-axis using this function as opposed to in respect to the circumferential direction.
+    """This functions calculates the proportion of radial hydrides by assessing 
+    each angle by the criteria created by (Colas, 2013). However, it is 
+    modified for use with hough_measure.py, as angles are taken in respect 
+    to the y-axis using this function as opposed to in respect to the 
+    circumferential direction.
     
     
      Parameters
@@ -20,7 +22,7 @@ def RHF_prop(hough_measure_array):
         
     Returns
     -------
-    rhf2: float
+    rhf: float
         radial hydride fraction
     max: int/float
         maximum hydride size detected in pixels
